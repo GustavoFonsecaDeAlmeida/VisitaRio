@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>Praias</title>
+
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta http-equiv="content-language" content="pt-br"/>
+
+ 
+   <link href="lib/ratchet/css/ratchet.css" rel="stylesheet">
+	
+    <script src="lib/ratchet/js/ratchet.js"></script>
+  <script src="lib/jquery/jquery-2.1.4.min.js"></script>  
+  <script src="lib/angularJS/angular.js"></script>
+  </head>
+ <body ng-app="praia">
+<header class="bar bar-nav">
+  <a class="icon  icon-left pull-left" onClick="index()" data-transition="slide-in">Inicio</a>
+ <a  style="font-size:90%" class="icon  icon-star pull-right" onClick="hospitalF()" data-transition="slide-in">Recomendado</a>
+  
+  <h1 class="title">Praias</h1>
+</header>
+<div class="content">
+      <div class="card">
+
+            
+  </li>
+</ul>
+	</div>
+      <div class="content-padded">
+      <br>
+	  <form>
+	  <label for="search"class="hidden">'</label>
+      <input id="search" type="text" class="search" data-ng-model="searchString" placeholder="Digite os termos da busca">
+     
+      </form>
+      </div>
+	   <div>
+	 
+	  </div>
+	  <h3 id="quantidade">Praias</h3>
+      
+  <div ng-controller="ListaCtrl">
+        <div class="content-padded">
+    <ul  class="table-view" >
+      <li class="table-view-cell media" ng-repeat="data in beach  | searchFor:searchString | limitTo: 10 " ng-click="hoteis2(data.geoResult.point.lat,data.geoResult.point.lng)"><img src="img/icones/Icon-Praia.png" alt="Praias" width="65" class="media-object pull-left"><div class="media-body" ng-click="hoteis2(data.geoResult.point.lat,data.geoResult.point.lng)">{{data.name}}<br>Endereço:{{data.geoResult.address}}<br>{{data.description.short_text}}{{data.geoResult.neighbourhood}}<a/></li></div>
+    </ul>
+    </div>
+  </div>
+  </div>
+
+  </body>
+
+   <script src="js/allinjs.js"></script>
+</html

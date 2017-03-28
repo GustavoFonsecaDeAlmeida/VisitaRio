@@ -1,0 +1,27 @@
+[
+  {
+    "Id": 1,
+        "Latitude": -22.896893,
+        "Longitude": -43.181976,
+    "Descricao": "Delegacia de Roubos e Furtos End:Praca Maua, 5 Centro"
+    },
+    {
+    "Id": 2,
+        "Latitude": -22.893372,
+        "Longitude": -43.190819,
+    "Descricao": "Delegacia Atendimento a Mulher End: Silvino Montenegro,3 andar Gamboa"
+    },
+    {
+    "Id": 3,
+        "Latitude": -22.893183,
+        "Longitude": -43.190773,
+    "Descricao": "Delegacia Especial do Transito End: Silvino Montenegro, 1 andar Gamboa"
+    },
+    {
+    "Id": 4,
+      "Latitude": -22.893183,
+      "Longitude": -43.190773,
+    "Descricao": "Delegacia de crimes de informatica  End: Silvino Montenegro, 2 andar Gamboa"
+    }
+    
+]

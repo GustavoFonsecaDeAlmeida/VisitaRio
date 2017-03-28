@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>VisitaRio</title>
+
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta http-equiv="content-language" content="pt-br"/>
+
+    <link href="lib/ratchet/css/ratchet.css" rel="stylesheet">
+	
+    <script src="lib/ratchet/js/ratchet.js"></script>
+    <script src="lib/jquery/jquery-2.1.4.min.js"></script>
+    
+  </head>
+  <body>
+
+<header class="bar bar-nav">
+  <a class="icon icon-home pull-left" onClick="index()" data-transition="slide-in">Inicio</a>
+  
+  <h1 class="title">VisitaRio</h1>
+</header>
+
+
+    <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
+    <div class="content">
+      <p class="content-padded"></p>
+      <div class="card">
+<ul class="table-view">
+  <li class="table-view-cell media" onClick="hospital()"> 
+ <a class="navigate-right"  data-transition="slide-in">
+ <img src="img/icones/hospital.png" width="65" class="media-object pull-left" alt="Hospital">
+ <div class="media-body">
+        Hostital
+        
+      </div>
+            	
+            
+        	<li class="table-view-cell media" onClick="delegacia()">
+            <a class="navigate-right" data-transition="slide-in">
+            	<img src="img/icones/policia.png" width="65" class="media-object pull-left" alt="policia">
+      <div class="media-body">
+        Delegacia
+        
+      </div>
+            
+            </a></li>
+            
+        	<li class="table-view-cell media" onClick="sleep()">
+            <a class="navigate-right" data-transition="slide-in">
+            	<img src="img/icones/hotel.png" width="65" class="media-object pull-left" alt="turismo">
+      <div class="media-body">
+        Hotel
+        
+      </div>             
+            </a></li>
+            
+        	<li class="table-view-cell media" onClick="food()">
+            <a class="navigate-right" data-transition="slide-in">
+            	<img src="img/icones/Icon-Restaurant.png" width="65" class="media-object pull-left" alt="praia">
+      <div class="media-body">
+        Restaurantes
+        
+      </div>            
+            </a></li>
+            
+        	<li class="table-view-cell media" onClick="praia()">
+            <a class="navigate-right" data-transition="slide-in">
+            	<img src="img/icones/Icon-Praia.png" width="65" class="media-object pull-left" alt="food">
+      <div class="media-body">
+        Praias
+        
+      </div>
+              
+            </a></li>
+        	<li class="table-view-cell media" onClick="eventos()">
+            <a class="navigate-right" data-transition="slide-in">
+            	<img src="img/icones/eventos.png" width="65" class="media-object pull-left" alt="dormir">
+      <div class="media-body">
+        Eventos
+        
+      </div>            
+            </a></li>
+            
+        	<li class="table-view-cell media" onClick="turismo()">
+            <a class="navigate-right" data-transition="slide-in">
+            	<img src="img/icones/ponto turistico.png" width="65" class="media-object pull-left" alt="evento">
+      <div class="media-body">
+        Pontos Turisticos
+        
+      </div>              
+            </a></li>
+            
+        	<li class="table-view-cell media" onClick="banheiro()">
+            <a class="navigate-right" data-transition="slide-in">
+            	<img src="img/icones/banheiro.png" width="65" class="media-object pull-left" alt="banheiro">
+      <div class="media-body">
+        Banheiro
+        
+      </div>
+            </a></li>
+</ul>
+      </div>
+    </div>
+    
+
+<script src="js/Navegacao.js"></script>
+<script src="js/allinjs.js"></script>
+  </body>
+  
+</html>

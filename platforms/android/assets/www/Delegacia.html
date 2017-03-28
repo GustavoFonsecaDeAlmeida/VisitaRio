@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>Delegacias</title>
+
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta http-equiv="content-language" content="pt-br"/>
+
+ 
+   <link href="lib/ratchet/css/ratchet.css" rel="stylesheet">
+	
+    <script src="lib/ratchet/js/ratchet.js"></script>
+  <script src="lib/jquery/jquery-2.1.4.min.js"></script>  <script src="lib/angularJS/angular.js"></script>
+  </head>
+ <body data-ng-app="delegacia">
+<header class="bar bar-nav">
+ <a class="icon  icon-left pull-left" onClick="index()" data-transition="slide-in">Inicio</a>
+ <a  style="font-size:90%" class="icon  icon-star pull-right" onClick="hospitalF()" data-transition="slide-in">Recomendado</a>
+ 
+  <h1 class="title">Delegacias</h1>
+</header>
+<div class="content">
+      <div class="card">
+
+            
+  </li>
+</ul>
+	</div>
+      <div class="content-padded">	
+      <br>
+	  <form>
+	  <label for="search"class="hidden">'</label>
+      <input id="search" type="text" class="search" data-ng-model="searchString" placeholder="Digite os termos da busca">
+      </form>
+      </div>
+	  <div>
+	  
+	  </div>
+	  <h3 id="quantidade">Delegacias</h3>
+  <div data-ng-controller="ListaCtrl">
+        <div class="content-padded">
+    <ul  class="table-view" >
+      <li class="table-view-cell media" data-ng-repeat="data in delegacias  | searchFor:searchString | limitTo: 10 " ng-click="hoteis2(data.geoResult.point.lat,data.geoResult.point.lng)"><img src="img/icones/policia.png" width="65" class="media-object pull-left" alt="policia"><div class="media-body" ng-click="hoteis2(data.geoResult.point.lat,data.geoResult.point.lng)">{{data.name}}<br>Endereço:{{data.geoResult.address}}<br>{{data.description.text}}</div><a href="https://www.google.com.br/maps/place/{{data.geoResult.point.lat}},+{{data.geoResult.point.lng}}"W/@{{data.geoResult.point.lat}},{{data.geoResult.point.lng}},17z/data=!3m1!4b1!4m2!3m1!1s0x0:0x0"><span class="icon icon-info pull-right">Rota</span></a></li>
+    </ul>
+    </div>
+  </div>
+  </div>
+<script src="js/allinjs.js"></script>
+  </body>
+   
+</html>

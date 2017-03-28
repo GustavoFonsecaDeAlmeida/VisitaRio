@@ -1,0 +1,62 @@
+[
+  {
+    "Id": 1,
+        "Latitude": -22.912115,
+        "Longitude": -43.687183,
+    "Descricao": "SMS RIO PADI PEDRO II Especialiade:Pediatria,Cirurgia Geral"
+    },
+    {
+    "Id": 2,
+        "Latitude": -22.897056,
+        "Longitude": -43.195688,
+    "Descricao": "SMS CF NÉLIO DE OLIVEIRA Especialiade:Oncologia"
+    },
+    {
+    "Id": 3,
+        "Latitude": -22.857217,
+        "Longitude": -43.250116,
+    "Descricao": "SMS CAPsad III MIRIAM MAKEBA Especialidade:Pediatria"
+    },
+    {
+    "Id": 4,
+      "Latitude": -22.862665,
+      "Longitude": -43.280633,
+    "Descricao": "SMS CF PALMEIRAS Especialidade:Cirurgia Geral"
+    },
+    {
+    "Id": 5,
+      "Latitude": -22897585,
+      "Longitude": -43.195326,
+    "Descricao": "SMS RIO CMS PROVIDENCIA Especialidade:Neurologia"
+    },
+    {
+    "Id": 6,
+      "Latitude": -22.858371,
+      "Longitude": -43.492489,
+    "Descricao": "SMS RIO COORDENAÇÃO DE EMERGENCIA REGIONAL - LEBLON Especialidades:Terapia Endereço:Avn Bartolomeu Mitre 1108"
+    },
+    {
+    "Id": 7,
+      "Latitude": -22.838501,
+      "Longitude": -43.260894,
+    "Descricao": "SMS CAPS FERNANDO DINIZ "
+    },
+    {
+    "Id": 8,
+      "Latitude": -22.869916,
+      "Longitude": -43.455739,
+    "Descricao": "SMS CAPS LIMA BARRETO - A"
+    },
+    {
+    "Id": 9,
+      "Latitude": -22.846095,
+      "Longitude": -43.377535,
+    "Descricao": "SMS CAPS LINDA BATISTA "
+    },
+    {
+    "Id": 10,
+      "Latitude": -22.918216,
+      "Longitude": -43.558136,
+    "Descricao": "SMS CAPS PEDRO PELLEGRINO -"
+    }
+]

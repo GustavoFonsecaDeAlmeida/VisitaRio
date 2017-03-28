@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style type="text/css">
+      html, body { height: 100%; margin: 0; padding: 0; }
+      #map { height: 100%; }
+    </style>
+  </head>
+  <link href="lib/ratchet/css/ratchet.css" rel="stylesheet">
+  <body>
+  <header class="bar bar-nav">
+ <a  class="icon  icon-left pull-left" onClick="index()" data-transition="slide-in">Inicio</a>
+ 
+ </header>
+ 
+    <div id="map"></div>
+    <script type="text/javascript">
+
+
+
+    </script>
+
+<script type="text/javascript">
+
+
+
+function initMap() {
+
+///gambiarra, depois muda na funcao origem
+var latMapa=window.sessionStorage.getItem("lat");
+var lngMapa=window.sessionStorage.getItem("lng");
+
+console.log(latMapa);
+console.log(lngMapa);
+  var mapOptions = {
+    zoom: 20,
+    center: {lat: parseFloat(latMapa),lng: parseFloat(lngMapa)},
+    disableDefaultUI: true
+  }
+  
+  var map = new google.maps.Map(document.getElementById("map"),mapOptions);
+ 
+    var marker = new google.maps.Marker({
+    position:{lat: parseFloat(latMapa) , lng: parseFloat(lngMapa)},
+    map: map,
+    
+  });
+}
+
+function detectBrowser() {
+  var useragent = navigator.userAgent;
+  var map = document.getElementById("map");
+
+  if (useragent.indexOf('iPhone') != -1 || useragent.indexOf('Android') != -1 ) {
+    map.style.width = '100%';
+    map.style.height = '100%';
+  } else {
+    map.style.width = '600px';
+    map.style.height = '800px';
+  }
+}function index(){
+				location.href="index.html"
+			}
+
+
+</script>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjbThEwaoKFMV5AxgIs0sOaSsVt9GubKA&callback=initMap">
+    </script>
+  </body>
+</html>
+

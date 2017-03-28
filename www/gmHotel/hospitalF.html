@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta http-equiv="content-language" content="pt-br"/>
+        <title>Hospitais Mais Procurados</title>
+        <link rel="stylesheet" type="text/css" href="css/estilo.css">
+        <link href="../lib/ratchet/css/ratchet.css" rel="stylesheet">
+    <script src="../lib/ratchet/js/ratchet.js"></script>
+   <script src="../lib/angularJS/angular.js"></script>
+    </head>
+ 
+    <body>
+    <header class="bar bar-nav">
+ <a class="icon  icon-left pull-left" onClick="hospital()" data-transition="slide-in"></a>
+ 
+  <h1 class="title">Recomendado</h1>
+</header>
+<br>
+<br>
+<br>
+
+<div class="content">
+    	<div id="mapa" style="height: 80%; width: 100%">
+        </div>
+        
+		
+		<script src="js/jquery.min.js"></script>
+		<script src="js/navegacao.js"></script>
+ 
+        <!-- Maps API Javascript -->
+        <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+        
+        <!-- Caixa de informação -->
+        <script src="js/infobox.js"></script>
+		
+        <!-- Agrupamento dos marcadores -->
+		<script src="js/markerclusterer.js"></script>
+ 
+        <!-- Arquivo de inicialização do mapa -->
+		<script src="js/mapa.js"></script>
+    </body>
+</html>
